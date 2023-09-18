@@ -4,12 +4,87 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	    <title>Accessible Portfolio</title>
+
+
+	<style>
+		/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+	    <header>
+        <h1 role="heading">My Portfolio</h1>
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About Me</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2 role="heading">About Me</h2>
+            <img src="https://i.pinimg.com/originals/09/f2/68/09f2689408936b0d8f37823e4d44ecad.jpg" alt="My Profile Picture" role="img">
+            <p>
+                I am a passionate web developer with experience in creating accessible and user-friendly websites.
+                ...
+            </p>
+        </section>
+        <section id="projects">
+            <h2 role="heading">My Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1: <a href="project1.html">Project 1 Name</a></li>
+                <li role="listitem">Project 2: <a href="project2.html">Project 2 Name</a></li>
+                <li role="listitem">Project 3: <a href="project3.html">Project 3 Name</a></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2 role="heading">Contact Me</h2>
+            <p>
+                You can reach me at <a href="mailto:contact@example.com">contact@example.com</a>.
+            </p>
+        </section>
+    </main>
 
 </body>
 
